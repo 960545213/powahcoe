@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "powah:capacitor_basic_tiny",
+    "powah:capacitor_basic",
+    "powah:capacitor_basic_large",
+    "powah:capacitor_hardened",
+    "powah:capacitor_blazing",
+    "powah:capacitor_niotic",
+    "powah:capacitor_spirited",
+    "powah:capacitor_nitro",
+    "powahcoe:batch_upgrade_1",
+    "powahcoe:batch_upgrade_2",
+    "powahcoe:batch_upgrade_3",
+    "powahcoe:batch_upgrade_4",
+    "powahcoe:batch_upgrade_5",
+    "powahcoe:batch_upgrade_6",
+    "powahcoe:batch_upgrade_7"
+  ]
+}

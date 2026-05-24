@@ -1,0 +1,16 @@
+{
+  "type": "powah:energizing",
+  "energy": 1000000,
+  "ingredients": [
+    {"item": "powah:capacitor_niotic"},
+    {"item": "powah:niotic_crystal_block"},
+    {"item": "powah:niotic_crystal_block"},
+    {"item": "powah:niotic_crystal_block"},
+    {"item": "powah:niotic_crystal_block"},
+    {"item": "powah:dielectric_casing"}
+  ],
+  "result": {
+    "id": "powahcoe:batch_upgrade_5",
+    "count": 1
+  }
+}

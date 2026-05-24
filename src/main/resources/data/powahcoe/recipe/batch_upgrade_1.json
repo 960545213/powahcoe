@@ -1,0 +1,16 @@
+{
+  "type": "powah:energizing",
+  "energy": 10000,
+  "ingredients": [
+    {"item": "powah:capacitor_basic_tiny"},
+    {"item": "minecraft:iron_ingot"},
+    {"item": "minecraft:iron_ingot"},
+    {"item": "minecraft:iron_ingot"},
+    {"item": "minecraft:iron_ingot"},
+    {"item": "powah:dielectric_casing"}
+  ],
+  "result": {
+    "id": "powahcoe:batch_upgrade_1",
+    "count": 1
+  }
+}

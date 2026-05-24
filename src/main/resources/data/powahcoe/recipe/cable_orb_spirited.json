@@ -1,0 +1,12 @@
+{
+  "type": "powah:energizing",
+  "energy": 4000000,
+  "ingredients": [
+    {"item": "powah:energizing_orb"},
+    {"item": "powah:energizing_rod_spirited"}
+  ],
+  "result": {
+    "id": "powahcoe:cable_orb_spirited",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "powah:energizing",
+  "energy": 100000,
+  "ingredients": [
+    {"item": "powah:capacitor_hardened"},
+    {"item": "powah:energized_steel_block"},
+    {"item": "powah:energized_steel_block"},
+    {"item": "powah:energized_steel_block"},
+    {"item": "powah:energized_steel_block"},
+    {"item": "powah:dielectric_casing"}
+  ],
+  "result": {
+    "id": "powahcoe:batch_upgrade_3",
+    "count": 1
+  }
+}
