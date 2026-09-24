@@ -25,5 +25,6 @@
   "item.powahcoe.batch_upgrade_5": "Niotic Batch Upgrade (x5)",
   "item.powahcoe.batch_upgrade_6": "Spirited Batch Upgrade (x6)",
   "item.powahcoe.batch_upgrade_7": "Nitro Batch Upgrade (x7)",
-  "tooltip.powahcoe.batch_upgrade": "Processes enough recipes to fill %s stack(s) of output"
+  "tooltip.powahcoe.batch_upgrade": "Target %1$s output stacks; %1$sx energy receive rate",
+  "category.powahcoe.energizing": "Cable Energizing"
 }

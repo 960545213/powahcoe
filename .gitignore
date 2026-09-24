@@ -1,0 +1,12 @@
+.gradle/
+.idea/
+.planning/
+build/
+run/
+run-data/
+out/
+libs/*.jar
+*.iml
+.classpath
+.project
+.settings/

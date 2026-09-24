@@ -1,0 +1,16 @@
+{
+  "type": "powah:energizing",
+  "energy": 20000000,
+  "ingredients": [
+    {"item": "powah:capacitor_nitro"},
+    {"item": "powah:nitro_crystal_block"},
+    {"item": "powah:nitro_crystal_block"},
+    {"item": "powah:nitro_crystal_block"},
+    {"item": "powah:nitro_crystal_block"},
+    {"item": "powah:dielectric_casing"}
+  ],
+  "result": {
+    "item": "powahcoe:batch_upgrade_7",
+    "count": 1
+  }
+}

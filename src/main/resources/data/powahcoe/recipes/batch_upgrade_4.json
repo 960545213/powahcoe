@@ -1,0 +1,16 @@
+{
+  "type": "powah:energizing",
+  "energy": 500000,
+  "ingredients": [
+    {"item": "powah:capacitor_blazing"},
+    {"item": "powah:blazing_crystal_block"},
+    {"item": "powah:blazing_crystal_block"},
+    {"item": "powah:blazing_crystal_block"},
+    {"item": "powah:blazing_crystal_block"},
+    {"item": "powah:dielectric_casing"}
+  ],
+  "result": {
+    "item": "powahcoe:batch_upgrade_4",
+    "count": 1
+  }
+}

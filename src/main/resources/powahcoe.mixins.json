@@ -1,0 +1,14 @@
+{
+    "required": true,
+    "package": "org.shuashuashua.powahcoe.mixin",
+    "compatibilityLevel": "JAVA_17",
+    "refmap": "powahcoe.refmap.json",
+    "mixins": [
+        "MixinEnergizingRecipe",
+        "MixinEnergizingOrbTile"
+    ],
+    "client": [
+        "MixinEnergizingOrbBlock"
+    ],
+    "minVersion": "0.8.5"
+}

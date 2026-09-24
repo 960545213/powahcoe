@@ -1,0 +1,16 @@
+{
+  "type": "powah:energizing",
+  "energy": 5000000,
+  "ingredients": [
+    {"item": "powah:capacitor_spirited"},
+    {"item": "powah:spirited_crystal_block"},
+    {"item": "powah:spirited_crystal_block"},
+    {"item": "powah:spirited_crystal_block"},
+    {"item": "powah:spirited_crystal_block"},
+    {"item": "powah:dielectric_casing"}
+  ],
+  "result": {
+    "item": "powahcoe:batch_upgrade_6",
+    "count": 1
+  }
+}
