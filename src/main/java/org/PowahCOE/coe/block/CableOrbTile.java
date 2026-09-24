@@ -210,8 +210,31 @@ public Tier getVariant() {
     }
 
     @Override
+    public CompoundTag getUpdateTag(HolderLookup.Provider registries) {
+        // Send the current state to players who start tracking this chunk later.
+        return saveWithoutMetadata(registries);
+    }
+
+    @Override
     public void handleUpdateTag(CompoundTag tag, HolderLookup.Provider registries) {
-        super.handleUpdateTag(tag, registries);
+        // Energy packets are partial updates, not saved block entities. Delegating
+        // to loadAdditional would reset missing fields (notably auto_eject).
+        if (tag.contains("energy_capacity_buffer")) {
+            this.buffer.setCapacity(tag.getLong("energy_capacity_buffer"));
+            this.buffer.setMaxExtract(this.buffer.getCapacity());
+        }
+        if (tag.contains("energy_stored_buffer")) {
+            this.buffer.setStored(tag.getLong("energy_stored_buffer"));
+        }
+        if (tag.contains("contain_recipe")) {
+            this.containRecipe = tag.getBoolean("contain_recipe");
+        }
+        if (tag.contains("auto_eject")) {
+            this.autoEject = tag.getBoolean("auto_eject");
+        }
+        if (tag.contains("Items")) {
+            this.inv.deserializeNBT(tag, registries);
+        }
     }
 
     @Override
@@ -414,6 +437,7 @@ public Tier getVariant() {
     }
 
     public void setAutoEject(boolean autoEject) {
+        if (this.autoEject == autoEject) return;
         this.autoEject = autoEject;
         setChanged();
         syncToClient(true);

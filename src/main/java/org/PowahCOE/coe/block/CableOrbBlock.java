@@ -39,6 +39,7 @@ import java.util.Map;
 
 import com.lowdragmc.lowdraglib2.gui.factory.BlockUIMenuType;
 import com.lowdragmc.lowdraglib2.gui.factory.BlockUIMenuType.BlockUIHolder;
+import com.lowdragmc.lowdraglib2.gui.sync.bindings.impl.DataBindingBuilder;
 import com.lowdragmc.lowdraglib2.gui.ui.ModularUI;
 import com.lowdragmc.lowdraglib2.gui.ui.UI;
 import com.lowdragmc.lowdraglib2.gui.ui.UIElement;
@@ -280,10 +281,16 @@ public class CableOrbBlock extends Block implements EntityBlock, IHud, SimpleWat
                 .setText(Component.translatable("button.powahcoe.auto_eject"))
                 .setOn(tile != null && tile.isAutoEject())
                 .toggleButton(btn -> btn.setOnServerClick(e -> {
-                    if (tile != null) {
+                    if (e.button == 0 && tile != null) {
                         tile.setAutoEject(!tile.isAutoEject());
                     }
                 }));
+        // Initialize and refresh the checkbox from the authoritative server value.
+        // Clicks still use the server handler above; never push a stale initial
+        // client value back to the server when the GUI is reopened.
+        autoEjectToggle.bind(DataBindingBuilder.boolS2C(tile::isAutoEject)
+                .name("auto_eject")
+                .build(holder.player.level().isClientSide()));
         root.addChild(autoEjectToggle);
 
         // Player inventory
